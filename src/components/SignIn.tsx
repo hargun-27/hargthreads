@@ -14,16 +14,19 @@ const SignIn = () => {
           alt="hargthread Logo"
         />
         <h1 className="text-2xl font-semibold tracking-tight">Welcome Back</h1>
-        <p className="text-sm max-w-xs mx-auto">
+        <p className="text-md max-w-xs mx-auto">
           By continuing you are setting up a hargthreads account and agree to my
           policies which do not exist so far 😎.
         </p>
-        
+
         <UserAuthFormForm />
 
         <p className="px-8 text-center text-sm text-zinc-700">
-          New to hargthreads?{' '}
-          <Link href="/sign-up" className="hover:text-zinc-800 text-sm underline-offset-4">
+          New to hargthreads?{" "}
+          <Link
+            href="/sign-up"
+            className="hover:text-zinc-800 text-sm underline-offset-4"
+          >
             Sign Up
           </Link>
         </p>

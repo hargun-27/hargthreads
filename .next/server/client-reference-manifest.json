@@ -235,7 +235,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "*",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -243,7 +243,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -251,7 +251,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "default",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -261,7 +261,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -269,7 +269,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -277,7 +277,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -287,7 +287,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "*",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -295,7 +295,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -303,13 +303,39 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "default",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "defaultHead": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "defaultHead",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/UserAuthForm.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/UserAuthForm.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/UserAuthForm.tsx",
+        "name": "",
+        "chunks": [
+          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/UserAuthForm.tsx",
+        "name": "default",
         "chunks": [
           "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
         ],
@@ -996,6 +1022,190 @@
       ],
       "async": false
     },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js#defaultHead": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "defaultHead",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js#defaultHead": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "defaultHead",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/src/components/UserAuthForm.tsx": {
+      "id": "(app-client)/./src/components/UserAuthForm.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/src/components/UserAuthForm.tsx#": {
+      "id": "(app-client)/./src/components/UserAuthForm.tsx",
+      "name": "",
+      "chunks": [
+        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hargunsibal/Developer/Github/hargthreads/src/components/UserAuthForm.tsx#default": {
+      "id": "(app-client)/./src/components/UserAuthForm.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+      ],
+      "async": false
+    },
     "/Users/hargunsibal/Developer/Github/hargthreads/src/styles/globals.css#": {
       "id": "null",
       "name": "default",
@@ -1009,166 +1219,6 @@
       "chunks": [
         "static/css/app/layout.css"
       ]
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/shared/lib/head.js#defaultHead": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "defaultHead",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hargunsibal/Developer/Github/hargthreads/node_modules/next/dist/esm/shared/lib/head.js#defaultHead": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "defaultHead",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
     }
   }
 }
