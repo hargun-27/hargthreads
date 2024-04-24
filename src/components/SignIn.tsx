@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import UserAuthFormForm from "@/components/UserAuthForm";
 
-const SignIn = () => {
+const page = () => {
   return (
     <div className="container mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[400px]">
       <div className="flex flex-col space-y-2 text-center">
@@ -13,7 +13,7 @@ const SignIn = () => {
           className="w-10 h-10 mx-auto"
           alt="hargthread Logo"
         />
-        <h1 className="text-2xl font-semibold tracking-tight">Welcome Back</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Welcome</h1>
         <p className="text-md max-w-xs mx-auto">
           By continuing you are setting up a hargthreads account and agree to my
           policies which do not exist so far 😎.
@@ -35,4 +35,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default page;

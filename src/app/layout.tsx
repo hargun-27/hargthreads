@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/Toaster";
+import Providers from "@/components/Providers";
 
 export const metadata = {
   title: "hargthreads",
@@ -21,10 +22,8 @@ declare module "react" {
 
 export default function RootLayout({
   children,
-  authModal
 }: {
     children: React.ReactNode;
-    authModal: React.ReactNode;
 }) {
   return (
     <html
@@ -35,15 +34,15 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-screen pt-12 bg-slate-50 antialisased">
-        {/*  @ts-expect-error server component */}
-        <Navbar />
+        <Providers>
+          {/*  @ts-expect-error server component */}
+          <Navbar />
 
-        {authModal}
-
-        <div className="container max-w-7xl mx-auto h-full pt-12">
-          {children}
-        </div>
-        <Toaster />
+          <div className="container max-w-7xl mx-auto h-full pt-12">
+            {children}
+          </div>
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );

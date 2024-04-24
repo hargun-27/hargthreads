@@ -15,7 +15,7 @@ const Navbar = async () => {
             src="/hargunTurban.svg"
             width={100}
             height={100}
-            className="w-10 h-10"
+            className="w-8 h-8"
             alt="hargthread Logo"
           ></Image>
           <p className="hidden text-zinc-700 text-lg font-medium md:block">
