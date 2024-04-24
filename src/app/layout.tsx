@@ -21,8 +21,10 @@ declare module "react" {
 
 export default function RootLayout({
   children,
+  authModal
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
+    authModal: React.ReactNode;
 }) {
   return (
     <html
@@ -33,7 +35,10 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-screen pt-12 bg-slate-50 antialisased">
+        {/*  @ts-expect-error server component */}
         <Navbar />
+
+        {authModal}
 
         <div className="container max-w-7xl mx-auto h-full pt-12">
           {children}
