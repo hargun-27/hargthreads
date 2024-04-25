@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/Button";
+import { Button, buttonVariants } from "@/components/ui/Button";
 import { getAuthSession } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import SubscribeLeaveToggle from "@/components/SubscribeLeaveToggle";
+import Link from "next/link";
 
 const Layout = async ({
   children,
@@ -76,9 +77,7 @@ const Layout = async ({
                 </dd>
               </div>
               <div className="flex justify-between gap-x-4 py-3">
-                <dt className="text-gray-500">
-                  Members
-                </dt>
+                <dt className="text-gray-500">Members</dt>
                 <dd className="text-gray-700">
                   <div className="text-gray-900">{memberCount}</div>
                 </dd>
@@ -96,6 +95,16 @@ const Layout = async ({
                   isSubscribed={isSubscribed}
                 />
               ) : null}
+
+              <Link
+                className={buttonVariants({
+                  variant: "outline",
+                  className: "w-full mb-6",
+                })}
+                href={`/hargmunity/${slug}/submit`}
+              >
+                Create Post
+              </Link>
             </dl>
           </div>
         </div>
