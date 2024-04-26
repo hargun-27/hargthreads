@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     });
 
     if (!subscription) {
-      return new Response("Subscribe to post", { status: 403 });
+      return new Response("Subscribe to make a hargthread", { status: 403 });
     }
 
     await db.post.create({
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
     }
 
     return new Response(
-      "Could not post to hargthread at this time. Please try later",
+      "Could not make a hargthread at this time. Please try later",
       { status: 500 }
     );
   }
