@@ -39,22 +39,22 @@ model Session {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
+  id                   String          @id @default(cuid())
+  name                 String?
+  email                String?         @unique
+  emailVerified        DateTime?
   createdSubhargthread Subhargthread[] @relation("CreatedBy")
 
   username String? @unique
 
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
-  Post          Post[]
-  Comment       Comment[]
-  CommentVote   CommentVote[]
-  Vote          Vote[]
-  Subscription  Subscription[]
+  image        String?
+  accounts     Account[]
+  sessions     Session[]
+  Post         Post[]
+  Comment      Comment[]
+  CommentVote  CommentVote[]
+  Vote         Vote[]
+  Subscription Subscription[]
 }
 
 model Subhargthread {
@@ -86,14 +86,12 @@ model Post {
   content         Json?
   createdAt       DateTime      @default(now())
   updatedAt       DateTime      @updatedAt
+  author          User          @relation(fields: [authorId], references: [id])
+  authorId        String
   subhargthread   Subhargthread @relation(fields: [subhargthreadId], references: [id])
   subhargthreadId String
-
-  author   User   @relation(fields: [authorId], references: [id])
-  authorId String
-
-  comments Comment[]
-  votes     Vote[]
+  comments        Comment[]
+  votes           Vote[]
 }
 
 model Comment {
