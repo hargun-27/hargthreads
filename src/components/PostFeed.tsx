@@ -60,11 +60,25 @@ const PostFeed: FC<PostFeedProps> = ({ initialPosts, subhargthreadName }) => {
         if (index === posts.length - 1) {
           return (
             <li key={post.id} ref={ref}>
-              <Post subhargthreadName={post.subhargthread.name} post={post} commentAmt={post.comments.length} />
+              <Post
+                currentVote={currentVote}
+                votesAmt={votesAmt}
+                subhargthreadName={post.subhargthread.name}
+                post={post}
+                commentAmt={post.comments.length}
+              />
             </li>
           );
         } else {
-          return <Post subhargthreadName={post.subhargthread.name} post={post} commentAmt={post.comments.length} />;
+          return (
+            <Post
+              currentVote={currentVote}
+              votesAmt={votesAmt}
+              subhargthreadName={post.subhargthread.name}
+              post={post}
+              commentAmt={post.comments.length}
+            />
+          );
         }
       })}
     </ul>
