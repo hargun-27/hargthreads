@@ -17,6 +17,8 @@ const Navbar = async () => {
             height={100}
             className="w-8 h-8"
             alt="hargthread Logo"
+            priority={true}
+            sizes="100"
           ></Image>
           <p className="hidden text-black text-lg font-bold md:block hover:text-gray-700">
             hargthreads
