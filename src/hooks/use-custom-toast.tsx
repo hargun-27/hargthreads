@@ -7,7 +7,7 @@ export const useCustomToast = () => {
     const { dismiss } = toast({
       title: "Login Required",
       description:
-        "You need to be logged in to create a hargthread community",
+        "You need to be logged in to hargthread to perform this action.",
       variant: "destructive",
       action: (
         <Link
