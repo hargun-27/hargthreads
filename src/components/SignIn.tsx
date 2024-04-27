@@ -4,7 +4,7 @@ import UserAuthFormForm from "@/components/UserAuthForm";
 
 const page = () => {
   return (
-    <div className="container mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[400px]">
+    <div className="container mx-auto flex w-[80%] flex-col justify-center space-y-6 sm:w-[400px] rounded-lg bg-white p-12 shadow">
       <div className="flex flex-col space-y-2 text-center">
         <Image
           src="/hargunTurban.svg"
@@ -16,19 +16,21 @@ const page = () => {
         <h1 className="text-2xl font-semibold tracking-tight">Welcome</h1>
         <p className="text-md max-w-xs mx-auto">
           By continuing you are setting up a hargthreads account and agree to my
-          policies which do not exist so far 😎.
+          policies 😎
         </p>
 
         <UserAuthFormForm />
 
         <p className="px-8 text-center text-sm text-zinc-700">
           New to hargthreads?{" "}
-          <Link
-            href="/sign-up"
-            className="hover:text-zinc-800 text-sm underline-offset-4"
-          >
-            Sign Up
-          </Link>
+          <span className="block sm:inline">
+            <Link
+              href="/sign-up"
+              className="hover:text-zinc-800 text-sm underline"
+            >
+              Sign Up
+            </Link>
+          </span>
         </p>
       </div>
     </div>

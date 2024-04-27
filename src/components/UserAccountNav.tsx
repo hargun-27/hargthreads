@@ -49,9 +49,6 @@ const UserAccountNav: FC<UserAccountNavProps> = ({ user }) => {
         <DropdownMenuItem asChild>
           <Link href="/hargmunity/create">Create Hargmunity</Link>
         </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/settings">Settings</Link>
-        </DropdownMenuItem>
 
         <DropdownMenuSeparator />
 

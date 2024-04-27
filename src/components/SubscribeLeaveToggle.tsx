@@ -54,7 +54,7 @@ const SubscribeLeaveToggle: FC<SubscribeLeaveToggleProps> = ({
       });
       return toast({
         title: "Subscribed!",
-        description: `You are now subscriped to r/${subhargthreadName}`,
+        description: `You are now subscribed to hargmunity/${subhargthreadName}`,
       });
     },
   });
@@ -90,7 +90,7 @@ const SubscribeLeaveToggle: FC<SubscribeLeaveToggleProps> = ({
       });
       return toast({
         title: "Unsubscribed!",
-        description: `You are now unsubscriped from r/${subhargthreadName}`,
+        description: `You are now unsubscriped from hargmunity/${subhargthreadName}`,
       });
     },
   });

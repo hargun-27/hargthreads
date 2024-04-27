@@ -18,7 +18,7 @@ const Navbar = async () => {
             className="w-8 h-8"
             alt="hargthread Logo"
           ></Image>
-          <p className="hidden text-zinc-700 text-lg font-medium md:block">
+          <p className="hidden text-black text-lg font-bold md:block hover:text-gray-700">
             hargthreads
           </p>
         </Link>
