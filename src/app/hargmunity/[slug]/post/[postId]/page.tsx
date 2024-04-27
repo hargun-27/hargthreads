@@ -45,7 +45,7 @@ const SubhargthreadPostPage = async ({
 
   return (
     <div>
-      <div className="h-full flex flex-col sm:flex-row items-center sm:items-start justify-between">
+      <div className="h-full flex flex-col sm:flex-row items-center sm:items-start justify between">
         <Suspense fallback={<PostVoteShell />}>
           {/* @ts-expect-error server component */}
           <PostVoteServer
@@ -78,7 +78,8 @@ const SubhargthreadPostPage = async ({
               <Loader2 className="h-5 w-5 animate-spin text-zinc-500" />
             }
           >
-            <CommentsSection />
+            {/* @ts-expect-error server component */}
+            <CommentsSection postId={post?.id ?? cachedPost.id} />
           </Suspense>
         </div>
       </div>
