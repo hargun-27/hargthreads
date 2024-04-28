@@ -8,7 +8,7 @@ const Navbar = async () => {
   const session = await getAuthSession();
 
   return (
-    <div className="fixed top-0 inset-x-0 h-fit bg-zinc-100 border-b border-zinc-100 z-[10] py-2">
+    <div className="fixed top-0 inset-x-0 h-fit bg-zinc-950 border-b border-zinc-100 z-[10] py-2">
       <div className="container max-w-7xl h-full mx-auto flex items-center justify-between gap-2">
         <Link href="/" className="flex gap-2 items-center">
           <Image
@@ -20,7 +20,7 @@ const Navbar = async () => {
             priority={true}
             sizes="100"
           ></Image>
-          <p className="hidden text-black text-lg font-bold md:block hover:text-gray-700">
+          <p className="hidden text-zinc-100 text-lg font-bold md:block hover:text-zinc-300">
             hargthreads
           </p>
         </Link>

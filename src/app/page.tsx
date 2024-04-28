@@ -18,16 +18,16 @@ export default async function Home() {
         {session ? <CustomFeed /> : <GeneralFeed />}
 
         <div className="overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last">
-          <div className="bg-blue-100 py-4 px-6">
-            <p className="text-lg font-semibold py-3 flex items-center gap-1.5">
-              <HomeIcon className="w-5 h-5" />
+          <div className="bg-gray-950 py-4 px-6">
+            <p className="text-lg font-semibold py-3 flex items-center gap-1.5 text-white">
+              <HomeIcon className="w-5 h-5 text-white" />
               Home
             </p>
           </div>
 
-          <div className="my-3 divide-y divide-gray-100 px-6 py-4 text-xs leading-6">
+          <div className="px-6 py-4 leading-6 bg-white">
             <div className="flex justify-between gap-x-4 py-3">
-              <p className="text-zinc-500 text-[14px]">
+              <p className="text-zinc-900 text-md">
                 Your personal hargthreads feed. Come here to check in with cool
                 hargthreads 😁
               </p>
