@@ -9,7 +9,7 @@ import axios, { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { toast } from "../../hooks/use-toast";
 import { Button } from "../ui/Button";
-import { ArrowBigDown, ArrowBigUp } from "lucide-react";
+import { Heart, HeartCrack } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface PostVoteClientProps {
@@ -84,9 +84,9 @@ const PostVoteClient = ({
         variant="ghost"
         aria-label="upvote"
       >
-        <ArrowBigUp
+        <Heart
           className={cn("h-5 w-5 text-zinc-700", {
-            "text-emerald-500 fill-emerald-500": currentVote === "UP",
+            "text-red-500 fill-red-500": currentVote === "UP",
           })}
         />
       </Button>
@@ -104,9 +104,9 @@ const PostVoteClient = ({
         variant="ghost"
         aria-label="downvote"
       >
-        <ArrowBigDown
+        <HeartCrack
           className={cn("h-5 w-5 text-zinc-700", {
-            "text-red-500 fill-red-500": currentVote === "DOWN",
+            "text-blue-900 fill-blue-300": currentVote === "DOWN",
           })}
         />
       </Button>

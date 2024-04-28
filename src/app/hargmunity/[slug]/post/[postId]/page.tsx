@@ -6,7 +6,7 @@ import { redis } from "@/lib/redis";
 import { formatTimeToNow } from "@/lib/utils";
 import { CachedPost } from "@/types/redis";
 import { Post, User, Vote } from "@prisma/client";
-import { ArrowBigDown, ArrowBigUp, Loader2 } from "lucide-react";
+import { Heart, HeartCrack, Loader2 } from "lucide-react";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import CommentsSection from "@/components/CommentsSection";
@@ -91,13 +91,13 @@ function PostVoteShell() {
   return (
     <div className="flex items-center flex-col pr-6 w-20">
       <div className={buttonVariants({ variant: "ghost" })}>
-        <ArrowBigUp className="h-5 w-5 text-zinc-700" />
+        <Heart className="h-5 w-5 text-zinc-700" />
       </div>
       <div className="text-center py-2 font-medium text-sm text-zinc-900">
         <Loader2 className="h-3 w-3 animate-spin" />
       </div>
       <div className={buttonVariants({ variant: "ghost" })}>
-        <ArrowBigDown className="h-5 w-5 text-zinc-700" />
+        <HeartCrack className="h-5 w-5 text-zinc-700" />
       </div>
     </div>
   );
