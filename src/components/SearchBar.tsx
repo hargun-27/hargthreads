@@ -28,7 +28,8 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
     isFetching,
   } = useQuery({
     queryFn: async () => {
-      if (!input) return null; // Return null instead of an empty array
+      if (!input) return null;
+      // Return null instead of an empty array
       const { data } = await axios.get(`/api/search?q=${input}`);
       return data as (Subhargthread & {
         _count: Prisma.SubhargthreadCountOutputType;

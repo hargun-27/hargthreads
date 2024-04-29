@@ -21,7 +21,7 @@ const Navbar = async () => {
             priority={true}
             sizes="100"
           ></Image>
-          <p className="hidden text-zinc-100 text-lg font-bold md:block hover:text-zinc-300">
+          <p className="text-zinc-100 text-lg font-bold hidden sm:hidden md:hidden lg:block hover:text-zinc-300">
             hargthreads
           </p>
         </Link>
