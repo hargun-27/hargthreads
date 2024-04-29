@@ -14,7 +14,6 @@ import axios from "axios";
 import { Prisma, Subhargthread } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import { Users } from "lucide-react";
-import { request } from "http";
 import debounce from "lodash.debounce";
 
 interface SearchBarProps {}
@@ -29,7 +28,7 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
     isFetching,
   } = useQuery({
     queryFn: async () => {
-      if (!input) return [];
+      if (!input) return null; // Return null instead of an empty array
       const { data } = await axios.get(`/api/search?q=${input}`);
       return data as (Subhargthread & {
         _count: Prisma.SubhargthreadCountOutputType;
@@ -61,10 +60,10 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
         placeholder="search hargmunities"
       ></CommandInput>
 
-      {input.length > 0 ? (
+      {input.length > 0 && queryResults !== null ? (
         <CommandList className="absolute bg-white top-full inset-x-0 shadow rounded-b-md">
           {isFetched && <CommandEmpty>No results found.</CommandEmpty>}
-          {(queryResults?.length ?? 0) > 0 ? (
+            {queryResults?.length ?? 0 > 0 ? (
             <CommandGroup heading="hargmunities">
               {queryResults?.map((subhargthread) => (
                 <CommandItem
@@ -77,7 +76,7 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
                 >
                   <Users className="mr-2 h-4 w-4" />
                   <a href={`/hargmunity/${subhargthread.name}`}>
-                    r/{subhargthread.name}
+                    hargmunity/{subhargthread.name}
                   </a>
                 </CommandItem>
               ))}
