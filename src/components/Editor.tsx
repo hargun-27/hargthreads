@@ -15,7 +15,6 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 
 import "@/styles/editor.css";
-import { useCustomToast } from "@/hooks/use-custom-toast";
 
 type FormData = z.infer<typeof PostValidator>;
 
@@ -41,7 +40,6 @@ export const Editor: React.FC<EditorProps> = ({ subhargthreadId }) => {
   const router = useRouter();
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const pathname = usePathname();
-  const { loginToast } = useCustomToast();
 
   const { mutate: createPost } = useMutation({
     mutationFn: async ({
@@ -54,7 +52,11 @@ export const Editor: React.FC<EditorProps> = ({ subhargthreadId }) => {
       return data;
     },
     onError: () => {
-      return loginToast();
+      return toast({
+        title: "Something went wrong.",
+        description: "Please check if you have joined the subhargthread or please try again later.",
+        variant: "destructive",
+      });
     },
     onSuccess: () => {
       const newPathname = pathname.split("/").slice(0, -1).join("/");
