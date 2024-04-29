@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import {
   Command,
   CommandEmpty,
@@ -15,28 +15,33 @@ import { Prisma, Subhargthread } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import { Users } from "lucide-react";
 import debounce from "lodash.debounce";
+import { useOnClickOutside } from "@/hooks/use-on-click-outside"
 
-interface SearchBarProps {}
-
-const SearchBar: FC<SearchBarProps> = ({}) => {
+const SearchBar = ({}) => {
   const [input, setInput] = useState<string>("");
+  const commandRef = useRef<HTMLDivElement>(null);
+  const [isSearchResultsClosed, setIsSearchResultsClosed] = useState<boolean>(true)
 
   const {
     data: queryResults,
     refetch,
     isFetched,
-    isFetching,
   } = useQuery({
     queryFn: async () => {
       if (!input) return null;
-      // Return null instead of an empty array
       const { data } = await axios.get(`/api/search?q=${input}`);
+      setIsSearchResultsClosed(false)
       return data as (Subhargthread & {
         _count: Prisma.SubhargthreadCountOutputType;
       })[];
     },
     queryKey: ["search-query"],
     enabled: false,
+  });
+
+  useOnClickOutside(commandRef, () => {
+    setInput("");
+    setIsSearchResultsClosed(true);
   });
 
   const request = debounce(() => {
@@ -50,7 +55,10 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
   const router = useRouter();
 
   return (
-    <Command className="relative rounded-lg border max-w-lg z-50 overflow-visible">
+    <Command
+      className="relative rounded-lg border max-w-lg z-50 overflow-visible"
+      ref={commandRef}
+    >
       <CommandInput
         value={input}
         onValueChange={(text) => {
@@ -61,10 +69,14 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
         placeholder="search hargmunities"
       ></CommandInput>
 
-      {input.length > 0 && queryResults !== null ? (
-        <CommandList className="absolute bg-white top-full inset-x-0 shadow rounded-b-md">
+      {input.length >= 0 ? (
+        <CommandList
+          className={`absolute bg-white top-full inset-x-0 shadow rounded-b-md ${
+            isSearchResultsClosed ? "hidden" : ""
+          }`}
+        >
           {isFetched && <CommandEmpty>No results found.</CommandEmpty>}
-            {queryResults?.length ?? 0 > 0 ? (
+          {queryResults?.length ?? 0 > 0 ? (
             <CommandGroup heading="hargmunities">
               {queryResults?.map((subhargthread) => (
                 <CommandItem
