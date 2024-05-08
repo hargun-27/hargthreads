@@ -1,4 +1,3 @@
-import { INFINITE_SCROLLING_PAGINATION_RESULTS } from "@/config";
 import { db } from "@/lib/db";
 import PostFeed from "./PostFeed";
 
@@ -13,7 +12,7 @@ const CustomFeed = async () => {
       comments: true,
       subhargthread: true,
     },
-    take: INFINITE_SCROLLING_PAGINATION_RESULTS,
+    take: 30,
   });
 
   return <PostFeed initialPosts={posts} />;
