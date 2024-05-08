@@ -12,7 +12,7 @@ const CustomFeed = async () => {
       comments: true,
       subhargthread: true,
     },
-    take: 30,
+    take: 15,
   });
 
   return <PostFeed initialPosts={posts} />;
